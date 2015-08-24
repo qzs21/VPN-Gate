@@ -1,0 +1,16 @@
+{
+	"main" : "http://www.vpngate.net/",
+	"mirror" : [
+		{"name": "France", "host": "http://178.33.196.31:33529/"},
+		{"name": "Saudi Arabia", "host": "http://5.246.106.143:18951/"},
+		{"name": "Thailand", "host": "http://106.0.176.61:38336/"},
+		{"name": "Korea Republic of", "host": "http://147.46.143.17:15868/"},
+		{"name": "Korea Republic of", "host": "http://183.96.206.140:7470/"},
+		
+		{"name": "Korea Republic of", "host": "http://39.116.23.158:17580/"},
+		{"name": "Korea Republic of", "host": "http://165.132.145.87:4202/"},
+		{"name": "Thailand", "host": "http://106.0.176.61:38336/"},
+		{"name": "Russian Federation", "host": "http://88.206.99.194:11213/"},
+		{"name": "Korea Republic of", "host": "http://61.250.163.41:28348/"},
+	]
+}
