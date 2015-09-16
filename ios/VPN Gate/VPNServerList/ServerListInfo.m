@@ -10,7 +10,7 @@
 #import <AFNetworking.h>
 #import <NSObjectExtend.h>
 
-#define SERVER_INFO_URL @"https://github.com/qzs21/vpngate-mirrors/raw/master/README.md"
+#define SERVER_INFO_URL @"https://github.com/waylau/vpngate-mirrors/raw/master/README.md"
 
 @implementation ServerListInfo
 

@@ -117,7 +117,7 @@
                     NSURLComponents * components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
                     components.path = path;
                     info.openVPN_UDP_OVPN_URL = components.URL;
-                }                
+                }
                 break;
             }
             case 7: // MS-SSTP Windows Vista, 7, 8, RT 无需 VPN 客户端
@@ -164,20 +164,21 @@
         }
     }
     
-    // 排序返回
-    return
-    [dataItems sortedArrayUsingComparator:^NSComparisonResult(VPNServerInfo * obj1, VPNServerInfo * obj2)
-     {
-         if (obj1.ping < 0)
-         {
-             return NSOrderedDescending;
-         }
-         if (obj2.ping < 0)
-         {
-             return NSOrderedAscending;
-         }
-         return obj1.ping < obj2.ping ? NSOrderedAscending : NSOrderedDescending;
-     }];
+    return [NSArray arrayWithArray:dataItems];
+//    // 排序返回
+//    return
+//    [dataItems sortedArrayUsingComparator:^NSComparisonResult(VPNServerInfo * obj1, VPNServerInfo * obj2)
+//     {
+//         if (obj1.ping < 0)
+//         {
+//             return NSOrderedDescending;
+//         }
+//         if (obj2.ping < 0)
+//         {
+//             return NSOrderedAscending;
+//         }
+//         return obj1.ping < obj2.ping ? NSOrderedAscending : NSOrderedDescending;
+//     }];
 }
 
 

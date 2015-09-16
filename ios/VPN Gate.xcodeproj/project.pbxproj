@@ -14,13 +14,15 @@
 		B0C893BA1B8AF817001C4111 /* NSString+URLParams.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893A21B8AF817001C4111 /* NSString+URLParams.m */; };
 		B0C893BB1B8AF817001C4111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893A51B8AF817001C4111 /* AppDelegate.m */; };
 		B0C893BD1B8AF817001C4111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893A71B8AF817001C4111 /* main.m */; };
-		B0C893BE1B8AF817001C4111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C893A91B8AF817001C4111 /* Assets.xcassets */; };
-		B0C893BF1B8AF817001C4111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C893AA1B8AF817001C4111 /* LaunchScreen.storyboard */; };
-		B0C893C01B8AF817001C4111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C893AC1B8AF817001C4111 /* Main.storyboard */; };
 		B0C893C11B8AF817001C4111 /* ServerListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893B01B8AF817001C4111 /* ServerListCell.m */; };
 		B0C893C21B8AF817001C4111 /* ServerListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893B21B8AF817001C4111 /* ServerListInfo.m */; };
 		B0C893C31B8AF817001C4111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893B41B8AF817001C4111 /* ViewController.m */; };
 		B0C893C41B8AF817001C4111 /* VPNServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C893B61B8AF817001C4111 /* VPNServerInfo.m */; };
+		B0F574CB1B8B24DB004164EB /* STDPingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F574CA1B8B24DB004164EB /* STDPingServices.m */; };
+		B0F574CE1B8B250B004164EB /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F574CD1B8B250B004164EB /* SimplePing.m */; };
+		B0F574D51B8B2811004164EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F574D01B8B2811004164EB /* Assets.xcassets */; };
+		B0F574D61B8B2811004164EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F574D11B8B2811004164EB /* LaunchScreen.storyboard */; };
+		B0F574D71B8B2811004164EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F574D31B8B2811004164EB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +41,6 @@
 		B0C893A51B8AF817001C4111 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B0C893A61B8AF817001C4111 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C893A71B8AF817001C4111 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B0C893A91B8AF817001C4111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0C893AB1B8AF817001C4111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B0C893AD1B8AF817001C4111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C893AF1B8AF817001C4111 /* ServerListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerListCell.h; sourceTree = "<group>"; };
 		B0C893B01B8AF817001C4111 /* ServerListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerListCell.m; sourceTree = "<group>"; };
 		B0C893B11B8AF817001C4111 /* ServerListInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerListInfo.h; sourceTree = "<group>"; };
@@ -50,6 +49,13 @@
 		B0C893B41B8AF817001C4111 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B0C893B51B8AF817001C4111 /* VPNServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNServerInfo.h; sourceTree = "<group>"; };
 		B0C893B61B8AF817001C4111 /* VPNServerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNServerInfo.m; sourceTree = "<group>"; };
+		B0F574C91B8B24DB004164EB /* STDPingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDPingServices.h; sourceTree = "<group>"; };
+		B0F574CA1B8B24DB004164EB /* STDPingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDPingServices.m; sourceTree = "<group>"; };
+		B0F574CC1B8B250B004164EB /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		B0F574CD1B8B250B004164EB /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		B0F574D01B8B2811004164EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0F574D21B8B2811004164EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0F574D41B8B2811004164EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB1584C47B305FC230CF55D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,10 +109,10 @@
 		B0C893981B8AF817001C4111 /* VPN Gate */ = {
 			isa = PBXGroup;
 			children = (
+				B0F574CF1B8B2811004164EB /* Resouce */,
 				B0C893991B8AF817001C4111 /* BottomPushView */,
 				B0C893A01B8AF817001C4111 /* Extends */,
 				B0C893A31B8AF817001C4111 /* Main */,
-				B0C893A81B8AF817001C4111 /* Resuce */,
 				B0C893AE1B8AF817001C4111 /* VPNServerList */,
 			);
 			path = "VPN Gate";
@@ -130,6 +136,10 @@
 			children = (
 				B0C893A11B8AF817001C4111 /* NSString+URLParams.h */,
 				B0C893A21B8AF817001C4111 /* NSString+URLParams.m */,
+				B0F574C91B8B24DB004164EB /* STDPingServices.h */,
+				B0F574CA1B8B24DB004164EB /* STDPingServices.m */,
+				B0F574CC1B8B250B004164EB /* SimplePing.h */,
+				B0F574CD1B8B250B004164EB /* SimplePing.m */,
 			);
 			path = Extends;
 			sourceTree = "<group>";
@@ -145,16 +155,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		B0C893A81B8AF817001C4111 /* Resuce */ = {
-			isa = PBXGroup;
-			children = (
-				B0C893A91B8AF817001C4111 /* Assets.xcassets */,
-				B0C893AA1B8AF817001C4111 /* LaunchScreen.storyboard */,
-				B0C893AC1B8AF817001C4111 /* Main.storyboard */,
-			);
-			path = Resuce;
-			sourceTree = "<group>";
-		};
 		B0C893AE1B8AF817001C4111 /* VPNServerList */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +168,16 @@
 				B0C893B61B8AF817001C4111 /* VPNServerInfo.m */,
 			);
 			path = VPNServerList;
+			sourceTree = "<group>";
+		};
+		B0F574CF1B8B2811004164EB /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				B0F574D01B8B2811004164EB /* Assets.xcassets */,
+				B0F574D11B8B2811004164EB /* LaunchScreen.storyboard */,
+				B0F574D31B8B2811004164EB /* Main.storyboard */,
+			);
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C893BF1B8AF817001C4111 /* LaunchScreen.storyboard in Resources */,
-				B0C893BE1B8AF817001C4111 /* Assets.xcassets in Resources */,
-				B0C893C01B8AF817001C4111 /* Main.storyboard in Resources */,
+				B0F574D71B8B2811004164EB /* Main.storyboard in Resources */,
+				B0F574D51B8B2811004164EB /* Assets.xcassets in Resources */,
+				B0F574D61B8B2811004164EB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F574CB1B8B24DB004164EB /* STDPingServices.m in Sources */,
 				B0C893C31B8AF817001C4111 /* ViewController.m in Sources */,
 				B0C893C41B8AF817001C4111 /* VPNServerInfo.m in Sources */,
+				B0F574CE1B8B250B004164EB /* SimplePing.m in Sources */,
 				B0C893C11B8AF817001C4111 /* ServerListCell.m in Sources */,
 				B0C893B81B8AF817001C4111 /* BottomPushOptionView.m in Sources */,
 				B0C893C21B8AF817001C4111 /* ServerListInfo.m in Sources */,
@@ -291,18 +303,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B0C893AA1B8AF817001C4111 /* LaunchScreen.storyboard */ = {
+		B0F574D11B8B2811004164EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B0C893AB1B8AF817001C4111 /* Base */,
+				B0F574D21B8B2811004164EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B0C893AC1B8AF817001C4111 /* Main.storyboard */ = {
+		B0F574D31B8B2811004164EB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B0C893AD1B8AF817001C4111 /* Base */,
+				B0F574D41B8B2811004164EB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -403,7 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.ineva.VPN-Gate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "daf1b7ae-8642-4b2d-b503-0bedfcb95c41";
+				PROVISIONING_PROFILE = "8bc5f60f-cd8e-4056-9d14-5d0bdef05da4";
 			};
 			name = Debug;
 		};
@@ -418,7 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.ineva.VPN-Gate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "daf1b7ae-8642-4b2d-b503-0bedfcb95c41";
+				PROVISIONING_PROFILE = "8bc5f60f-cd8e-4056-9d14-5d0bdef05da4";
 			};
 			name = Release;
 		};

@@ -20,6 +20,11 @@
 #import "ServerListInfo.h"
 #import "BottomPickerView.h"
 
+#import "STDPingServices.h"
+
+
+#define OPEN_VPN_APP_STORE_URL @"https://itunes.apple.com/cn/app/openvpn-connect/id590379981"
+
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 {
     NSInteger mTempMirrorsIndex;
@@ -37,6 +42,8 @@
 
 @property (nonatomic, strong) AFHTTPRequestOperationManager * manager;
 
+@property (nonatomic, strong) STDPingServices * serviece;
+
 @end
 
 @implementation ViewController
@@ -50,6 +57,20 @@
 //    for test
 //    self.serverItems = [ServerInfo resloerServerList:[NSData dataWithContentsOfFile:@"/Users/steven/vpngate.html"]
 //                                            withURL:self.host];
+
+//    @weakify(self);
+//    self.serviece = [STDPingServices startPingAddress:@"baidu.com" callbackHandler:^(STDPingItem *pingItem, NSArray *pingItems) {
+//        @strongify(self);
+//        if (pingItem.status != STDPingStatusFinished) {
+//            NSLog(@"%@", pingItem.description);
+//        } else {
+//            NSLog(@"%@", [STDPingItem statisticsWithPingItems:pingItems]);
+////            [self.textView appendText:[STDPingItem statisticsWithPingItems:pingItems]];
+////            [button setTitle:@"Ping" forState:UIControlStateNormal];
+////            button.tag = 10001;
+////            self.pingServices = nil;
+//        }
+//    }];
 }
 
 - (AFHTTPRequestOperationManager *)manager
@@ -161,6 +182,10 @@
             [sheet bk_addButtonWithTitle:[NSString stringWithFormat:@"UDP(%@)", info.openVPN_UDP_OVPN_URL.port] handler:^{
                 [self openURL:info.openVPN_UDP_OVPN_URL];
             }];
+            [sheet bk_addButtonWithTitle:@"如果未安装OpenVPN请点击安装" handler:^{
+                [self openURL:[NSURL URLWithString:OPEN_VPN_APP_STORE_URL]];
+            }];
+            
             [sheet bk_setCancelButtonWithTitle:@"Cancel" handler:nil];
             [sheet showInView:self.view];
         }
@@ -173,6 +198,10 @@
             if (info.openVPN_UDP_OVPN_URL)
             {
                 [self openURL:info.openVPN_UDP_OVPN_URL];
+            }
+            else
+            {
+                [SVProgressHUD showErrorWithStatus:@"此服务器不包含OpenVPN配置"];
             }
         }
     }];
